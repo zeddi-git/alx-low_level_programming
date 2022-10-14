@@ -3,6 +3,8 @@
 /**
  * main - This is Entry point
  *
+ * void - takes no argument 
+ * 
  * return - always 0 (success)
  */
 int main(void)
