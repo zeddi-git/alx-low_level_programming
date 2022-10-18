@@ -2,6 +2,7 @@
 
 /**
  * _islower - uses _putchar to print
+ * @c: character to print
  * prints alphabets ten times
  * Return: 0 for upper case and 1 lowercase
  */
