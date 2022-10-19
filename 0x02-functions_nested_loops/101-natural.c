@@ -2,7 +2,6 @@
 
 /**
  * main - This Marks the entry point
- *@i: integer value
  * Return: Always 0 (Success)
  */
 int main(void)
