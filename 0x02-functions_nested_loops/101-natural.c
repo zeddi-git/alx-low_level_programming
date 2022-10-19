@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/*
- * main - this is Entry point
- *
+/**
+ * main - This Marks the entry point
+ *@i: integer value
  * Return: Always 0 (Success)
  */
 int main(void)
