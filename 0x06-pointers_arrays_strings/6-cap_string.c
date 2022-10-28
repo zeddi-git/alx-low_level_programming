@@ -5,7 +5,7 @@
  * @s: Address of the string
  * Return: The uppercase @s address
  */
-char *cap_string(char *s)
+char *cap_string(char *n)
 {
 	int i, x;
 	int cap = 32;
