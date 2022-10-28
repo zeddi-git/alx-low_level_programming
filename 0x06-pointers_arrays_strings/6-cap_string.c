@@ -2,7 +2,7 @@
 
 /**
  * cap_string - funtion that capital string
- * @s: Address of the string
+ * @n: Address of the string
  * Return: The uppercase @s address
  */
 char *cap_string(char *n)
