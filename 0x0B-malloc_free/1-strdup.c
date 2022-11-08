@@ -1,16 +1,15 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
  * _strdup - duplicate to new memory space location
- * @str: char
- * Return: 0
+ * @str: string
+ * Return: pointer of an array of characters
  */
 char *_strdup(char *str)
 {
-	unsigned int i, j;
 	char *array;
+	unsigned int i, j;
 
 	if (str == NULL)
 	{
@@ -26,10 +25,10 @@ char *_strdup(char *str)
 	
 	if (array == NULL)
 	{
-		return (NULL)
+		return (NULL);
 	}
 
-	for (j = 0; j <= i; j++)
+	for (j = 0; j < i + 1; j++)
 	{
 		array[j] = str[j];
 	}
