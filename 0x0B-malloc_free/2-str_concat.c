@@ -45,7 +45,7 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	limit = j;
-	for (j = 0; j <= limit; k++, j++)
+	for (j = 0; j < limit + 1; j++)
 	{
 		array[k] = s2[k];
 	}
