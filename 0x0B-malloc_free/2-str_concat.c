@@ -9,40 +9,41 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *array;
-	int end1, end2, i = 0;
+	int i, j, k, e, conc;
+	int conc1 = 0;
+	int conc2 = 0;
+	char *q;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
-		s1 = s2 = "";
+		s1 = "";
 	}
-
-	for (end1 = 0; end1 <= *s1; end1++)
+	if (s2 == NULL)
 	{
+		s2 = "";
 	}
-
-	for (end2 = 0; end2 <= *s2; end2++)
+	for (i = 0; s1[i] != '\0'; i++)
 	{
+		conc1 += conc1;
 	}
-
-	array = malloc(sizeof(char) * (end1 + end2 + 1));
-
-	if (array == NULL)
+	for (j = 0; s2[j] != '\0'; j++)
+	{
+		conc2 += conc2;
+	}
+	conc = conc1 + conc2;
+	q = malloc(sizeof(char) * conc + 1);
+	if (q == NULL)
 	{
 		return (NULL);
 	}
-
-	while (*s1)
+	for (k = 0; s1[k] != '\0'; k++)
 	{
-		array[i] = *s1;
-		i++;
-		s1++;
+		q[k] = s1[k];
 	}
-	while (*s2)
+	for (k = k, e = 0; s2[e] != '\0'; e++, k++)
 	{
-		array[i] = *s2;
-		i++;
-		s2++;
+		q[k] = s2[e];
 	}
-	return (array);
+	q[k] = '\0';
+	return (q);
 }
