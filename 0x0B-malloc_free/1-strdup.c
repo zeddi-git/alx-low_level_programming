@@ -9,7 +9,7 @@
  */
 char *_strdup(char *str)
 {
-	int i, sum;
+	unsigned int i, j;
 	char *array;
 
 	if (str == NULL)
@@ -17,20 +17,22 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (sum = 0; sum <= *str; sum++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
+		;
 	}
 
-	sum += 1;
-	array = malloc(sizeof(char) * sum);
-
-	for (i = 0; i < sum; i++)
-	{
-		array[i] = str[i];
-	}
+	array = (char *)malloc(sizeof(char) * (i + 1));
+	
 	if (array == NULL)
 	{
-		return (NULL);
+		return (NULL)
 	}
+
+	for (j = 0; j <= i; j++)
+	{
+		array[j] = str[j];
+	}
+
 	return (array);
 }
